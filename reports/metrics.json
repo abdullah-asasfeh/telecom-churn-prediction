@@ -1,0 +1,83 @@
+{
+  "dataset": {
+    "customers": 7043,
+    "churn_rate": 0.2653698707936959,
+    "train_size": 5634,
+    "test_size": 1409
+  },
+  "cv": {
+    "Logistic Regression": {
+      "roc_auc": 0.846761008144245,
+      "pr_auc": 0.6581209365891765
+    },
+    "Random Forest": {
+      "roc_auc": 0.8444503341653462,
+      "pr_auc": 0.6518054388655099
+    },
+    "Gradient Boosting": {
+      "roc_auc": 0.8377857737921606,
+      "pr_auc": 0.6450650811170454
+    }
+  },
+  "test": {
+    "Logistic Regression": {
+      "roc_auc": 0.8452478751711487,
+      "pr_auc": 0.652725822354933
+    },
+    "Random Forest": {
+      "roc_auc": 0.8419489007724301,
+      "pr_auc": 0.6555064298381756
+    },
+    "Gradient Boosting": {
+      "roc_auc": 0.8402361207987807,
+      "pr_auc": 0.6542485416367732
+    }
+  },
+  "selected_model": "Logistic Regression",
+  "threshold": 0.5863467980218089,
+  "selected_test": {
+    "roc_auc": 0.8452478751711487,
+    "pr_auc": 0.652725822354933,
+    "precision": 0.5548780487804879,
+    "recall": 0.7299465240641712,
+    "f1": 0.6304849884526559,
+    "confusion_matrix": [
+      [
+        816,
+        219
+      ],
+      [
+        101,
+        273
+      ]
+    ],
+    "top20_churn_rate": 0.6654804270462633,
+    "top20_share_of_churners": 0.5,
+    "lift_top20": 2.5071174377224197
+  },
+  "feature_importance": {
+    "tenure": 0.0486,
+    "Contract": 0.0447,
+    "InternetService": 0.0287,
+    "TenureGroup": 0.0161,
+    "AvgMonthlySpend": 0.0048,
+    "MonthlyCharges": 0.0048,
+    "OnlineSecurity": 0.0038,
+    "TechSupport": 0.0037,
+    "PaymentMethod": 0.0029,
+    "NumServices": 0.0021,
+    "PaperlessBilling": 0.0021,
+    "StreamingMovies": 0.0017,
+    "MultipleLines": 0.0015,
+    "StreamingTV": 0.0015,
+    "OnlineBackup": 0.0014,
+    "SeniorCitizen": 0.0013,
+    "DeviceProtection": 0.0009,
+    "PhoneService": 0.0006,
+    "Dependents": 0.0003,
+    "ChargeIncrease": 0.0,
+    "Partner": 0.0,
+    "gender": -0.0,
+    "TotalCharges": -0.0001
+  }
+}
